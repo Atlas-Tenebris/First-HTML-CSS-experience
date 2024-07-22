@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 2!</title>
+    <link rel="icon" href="images/minecraft/minecraft-creeper-icon-24.jpg" type="image/png">
+
+    <style>
+        @font-face {
+            font-family: "Minecraftia";
+            src: url(font/Minecraftia-Regular.ttf) format('truetype');
+        }
+        body {
+                margin: 0;
+                min-height: 120vh; 
+                background-image: url(images/minecraft/minecraft-background.jpeg);
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat;
+            }
+
+
+        h1{
+                align-items: center;
+                align-content: center;
+                text-align: center;
+            }
+
+        #mine-logo{
+                margin-top: 5px;
+                width: 550px; 
+            }
+
+        .container{
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: center;
+                height: 55vh;
+                padding: 0 10px;
+            }
+
+        .sinopse{
+                color: rgb(255, 255, 255);
+                text-align: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0);
+                box-shadow: 3px 3px 4px rgba(0, 0, 0);
+                font-size: 14px;
+                font-family: Minecraftia;
+                letter-spacing: 1px;
+                margin-left: 75px;
+                margin-top: 5px;
+                width: 280px;
+                height: 280px;
+                border-radius: 8px;
+                border: 6px solid rgb(3, 141, 3);
+                background-color: rgb(3, 141, 3);
+                overflow: hidden;
+            }
+
+        .campos{
+                font-family: Minecraftia;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+                margin-top: 20px;
+                width: 200px;
+                border-radius: 25px;
+                height: 250px;
+            }
+
+        .item_input{
+                font-family: Minecraftia;
+                font-size: small;
+                margin-left: 4px;
+                border: 5px solid rgb(4, 122, 4);
+                border-radius: 5px;
+                margin-top: 35px;
+                width: 200px;
+                height: 30px;
+                box-shadow: 3px 3px 4px rgba(0, 0, 0);
+            }
+
+        .ofertas{
+                align-items: center;
+                text-align: center;
+                margin-right: 50px;
+                margin-bottom: 0px;
+                border-radius: 6px;
+                height: 400px;
+                width: 250px;
+                border: 15px solid rgb(4, 122, 4);
+                box-shadow: 3px 3px 4px black;
+                background-color: rgb(4, 122, 4);
+            }
+        #found-us{
+            margin-top: 15px;
+            font-family: Minecraftia;
+            color: white;
+            text-shadow: 3px 3px 4px black;
+        }
+
+    
+    .social-media{
+        display: flex;
+        align-items: center;
+        margin-bottom:15px;
+        font-family: Minecraftia;
+        color: white;
+        text-shadow: 3px 3px 4px black;
+        font-size: 20px;
+    }
+
+    .social-media-logo{
+
+            height: 70px;
+            margin-left: 50px;
+            margin-top: 15px;
+            margin-bottom:15px;
+            border-radius: 36px;
+            box-shadow: 2px 2px 4px black;
+        }
+    #Whatsapp-logo{
+        margin-left: 30px;
+    }
+
+    #Instagram-logo{
+        margin-left: 20px;
+    }
+    #Discord-logo{
+        margin-left: 50px;
+    }
+
+    #second-container{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+        margin-top:105px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(4, 95, 4, 0.973);
+        margin-left: 200px;
+        width: 1200px;
+        height: 500px;
+    }
+
+    #first-game-image {
+            width: 379px; /* Defina a largura desejada aqui */
+            height: 430px; /* Defina a altura desejada aqui */
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 4px black;
+        }
+    
+        .left-image-description{
+            width: 600px;
+            height: 400px;
+            background-color: rgb(4, 122, 4);
+            border: 20px solid rgb(4, 122, 4);
+            border-radius: 5px;
+            margin-right: 200px;
+            box-shadow: 3px 3px 4px black;
+            margin-top: 47px;
+            font-family: Minecraftia;
+            letter-spacing: 1px;
+            color: white;
+            text-shadow: 4px 4px 6px black;
+        }
+
+        #second-game-image{
+            width: 350px;
+            height: 435px;
+            margin-top: 55px;
+            margin-left: -150px;
+            border-radius: 5px;
+        }
+
+        #second-description{
+            width: 600px;
+            margin-left: -15px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> <img id="mine-logo" src="images/minecraft/Logo_300x51.svg"></h1>
+        <div class="container">
+            
+            <div class="sinopse"><br/> Minecraft é um jogo de mundo aberto onde você pode vagar por dimensões, enfrentar monstros e adquirir experiência.<br/>
+            Num mundo de blocos faça qualquer criação, onde o único limite é a imaginação! </div> <!--  -->
+            
+            <div class="campos">
+                <input type="text" class="item_input" name="nome" placeholder="Digite seu nome:"/>
+                <input type="text" class="item_input" name="e-mail" placeholder="Digite seu e-mail:"/>
+                <input type="text" class="item_input" name="senha" placeholder="Digite sua senha:"/>
+            </div> <!--  -->
+            
+            <div class="ofertas"> <!-- Seção com várias opções para entrar em contato. Discord, Instagram e Whatsapp. Só serão redirecionados para as páginas das emnpresas. -->
+
+                <div id="found-us">Nos encontre:</div>
+
+                <div id="Discord" class="social-media">
+                    <span>Discord:</span>
+                    <a href="https://discord.com/invite/ei-mine-792948544624525322" target="_blank">
+                        <img id="Discord-logo" class="social-media-logo" src="images/Social-media-logos/discord-logo.png" alt="Discord-logo">
+                    </a>
+                </div>
+
+                <div id="Instagram" class="social-media">
+                    <span>Instagram:</span>
+                    <a href="https://www.instagram.com/minecraft/" target="_blank">
+                        <img id="Instagram-logo" class="social-media-logo" src="images/Social-media-logos/instagram-logo.png" alt="Instagram-logo">
+                    </a>
+                </div>
+                <div id="Whatsapp" class="social-media">
+                    <span>Whatsapp:</span>
+                    <a href="https://whatsapp.com" target="_blank">
+                    <img id="Whatsapp-logo" class="social-media-logo" src="images/Social-media-logos/whatsapp-logo.png" alt="Whatsapp-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </h2>
+</html>
